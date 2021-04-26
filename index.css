@@ -20,7 +20,11 @@ p{
     font-weight: 300;
     color: rgb(32, 32, 32);
 }
-
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 img{
     position: relative;
     left: 0;
@@ -44,4 +48,10 @@ footer{
 }
 .scroll-up img{
     width: 40px;
+}
+
+@media only screen and (min-width:1024px) {
+    .gallery{
+        display:flex
+    }
 }
