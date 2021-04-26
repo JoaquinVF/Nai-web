@@ -28,6 +28,9 @@ img{
 }
 footer{
     display: flex;
+    width: 425px;
+    align-items: center;
+    justify-content: space-between;
 }
 .jv{
     text-decoration: none;
@@ -35,13 +38,9 @@ footer{
 }
 .scroll-up{
     position: relative;
-    bottom: 20px;
-    left: 10%;
-    border-radius: 100px;
     width: 40px;
     height: 40px;
 }
 .scroll-up img{
-    position: relative;
     width: 40px;
 }
