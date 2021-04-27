@@ -33,7 +33,7 @@ a:hover
   display: block;
   position: absolute;
   top: 18px;
-  right: -10px;
+  right: 5px;
   
   z-index: 1;
   
@@ -127,11 +127,11 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 200px;
   margin: -100px 0 0 0;
   padding: 20px;
   padding-top: 125px;
-  right: -10px;
+  right: -6px;
   
   background: #ededed;
   list-style-type: none;
@@ -171,7 +171,9 @@ h1{
     position: relative;
     left: 10px;
     top: -10px;
+    width: 100px;
     font-weight: 400;
+    font-size: 28px;
 }
 p{
     margin: 10px 20px;
@@ -183,10 +185,9 @@ p{
     display: flex;
     flex-direction: column;
 }
-img{
+.gallery img{
     position: relative;
     left: 0;
-    width: 100vw;
     margin: 2px 5px;
 }
 footer{
