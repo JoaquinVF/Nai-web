@@ -171,15 +171,9 @@ h1{
     position: relative;
     left: 10px;
     top: -10px;
-    width: 100px;
+    width: 280px;
     font-weight: 400;
     font-size: 28px;
-}
-p{
-    margin: 10px 20px;
-    font-size: 23px;
-    font-weight: 300;
-    color: rgb(32, 32, 32);
 }
 .gallery{
     display: flex;
