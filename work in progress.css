@@ -200,6 +200,9 @@ footer .jv{
   .gallery img{
     width: 70%;
   }
+  .scroll-up{
+    right: 20px;
+  }
   footer{
     position: relative;
     width: 99%;
