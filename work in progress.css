@@ -213,3 +213,8 @@ footer .jv{
       transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
   }
+@media screen and (min-width:1024px){
+  footer{
+    width: 99%;
+  }
+}
