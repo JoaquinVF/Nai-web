@@ -149,6 +149,7 @@ nav{
 }
 nav .name{
     position: relative;
+    top: 1px;
     font-weight: 400;
     font-size: 24px;
     margin: 0;
