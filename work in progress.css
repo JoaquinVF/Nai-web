@@ -162,7 +162,7 @@ nav .name{
     flex-direction: column;
 }
 .gallery img{
-    width: 70%;
+    width: 90%;
     height: 50%;
     margin: 1px 5px;
 }
@@ -197,7 +197,12 @@ footer .jv{
     }
   }
 @media screen and (min-width:1024px){
+  .gallery img{
+    width: 70%;
+  }
   footer{
+    position: relative;
     width: 99%;
+    left: 10px;
   }
 }

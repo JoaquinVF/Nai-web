@@ -244,6 +244,8 @@ footer .jv{
       width: 50%;
     }
     footer{
+      position: relative;
+      right: 30px;
       justify-content: flex-end;
       color: black;
     }
