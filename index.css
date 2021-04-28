@@ -235,7 +235,18 @@ footer .jv{
 }
 
 @media only screen and (min-width:1024px) {
-    .gallery{
-        display:flex
+    section a{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+    }
+    section img{
+      width: 50%;
+    }
+    footer{
+      justify-content: flex-end;
+      color: black;
     }
 }
