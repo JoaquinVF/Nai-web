@@ -36,9 +36,7 @@ a:hover
   position: absolute;
   top: 15px;
   right: 5px;
-  
   z-index: 1;
-  
   -webkit-user-select: none;
   user-select: none;
 }
@@ -46,7 +44,7 @@ a:hover
 #menuToggle input
 {
   display: block;
-  width: 40px;
+  width: 30px;
   height: 32px;
   position: absolute;
   top: -7px;
@@ -54,8 +52,8 @@ a:hover
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2; 
   
   -webkit-touch-callout: none;
 }
@@ -63,7 +61,7 @@ a:hover
 #menuToggle span
 {
   display: block;
-  width: 33px;
+  width: 25px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
@@ -92,7 +90,7 @@ a:hover
 #menuToggle input:checked ~ span
 {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(2px, 3px);
   background: #cdcdcd;
 }
 
@@ -110,12 +108,13 @@ a:hover
 
 #menu
 {
+  display: none;
   position: absolute;
-  width: 120px;
-  margin: -100px 0 0 0;
-  padding: 5px;
-  padding-top: 125px;
-  right: -6px;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  top: -30px;
+  right: -7px;
   font-weight: 900;
   background: black;
   list-style-type: none;
@@ -131,7 +130,7 @@ a:hover
 {
   color: #cdcdcd;
   padding: 10px 0;
-  font-size: 12px;
+  font-size: 1.5rem;
   text-align: center;
 }
 

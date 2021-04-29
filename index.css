@@ -43,7 +43,7 @@ a:hover
 #menuToggle input
 {
   display: block;
-  width: 40px;
+  width: 30px;
   height: 32px;
   position: absolute;
   top: -7px;
@@ -56,7 +56,6 @@ a:hover
   
   -webkit-touch-callout: none;
 }
-
 #menuToggle span
 {
   display: block;
@@ -86,18 +85,19 @@ a:hover
 {
   transform-origin: 0% 100%;
 }
-
 #menuToggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(2px, 3px);
   background: #cdcdcd;
 }
+
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
+
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   opacity: 1;
@@ -106,12 +106,13 @@ a:hover
 
 #menu
 {
+  display: none;
   position: absolute;
-  width: 120px;
-  margin: -100px 0 0 0;
-  padding: 5px;
-  padding-top: 125px;
-  right: -6px;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  top: -30px;
+  right: -9px;
   font-weight: 900;
   background: black;
   list-style-type: none;
@@ -127,7 +128,7 @@ a:hover
 {
   color: #cdcdcd;
   padding: 10px 0;
-  font-size: 12px;
+  font-size: 20px;
   text-align: center;
 }
 
