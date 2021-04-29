@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;900&display=swap');
 html {
     box-sizing: border-box;
     width: 100vw;
@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Spartan', sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -25,7 +25,9 @@ a
 
 a:hover
 {
-  color: tomato;
+  text-decoration: line-through;
+  text-decoration-color: rgba(0, 0, 0, 0.76);
+  opacity: 0.8;
 }
 
 #menuToggle
@@ -91,7 +93,7 @@ a:hover
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #cdcdcd;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3)
@@ -109,16 +111,15 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 80px;
+  width: 120px;
   margin: -100px 0 0 0;
-  padding: 20px;
+  padding: 5px;
   padding-top: 125px;
   right: -6px;
-  
-  background: #ededed;
+  font-weight: 900;
+  background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-
   
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
@@ -128,13 +129,18 @@ a:hover
 
 #menu li
 {
+  color: #cdcdcd;
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 12px;
+  text-align: center;
 }
 
 #menuToggle input:checked ~ ul
 {
   transform: none;
+  opacity: 0.8;
+}
+#menuToggle input:checked ~ ul a li{
   opacity: 1;
 }
 nav{
