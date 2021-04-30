@@ -180,36 +180,35 @@ section img{
     width: 98%;
 }
 .social-media{
-  width: 100%;
-  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(128, 128, 128, 0.199);
+
   opacity: 0.7;
 }
 .social-media img{
   width: 30px;
   height: 30px;
-}
-.social-media p{
-  font-size: 0.8rem;
+  padding: 30px 50px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
 }
 footer{
     display: flex;
     width: auto;
     align-items: center;
     justify-content: space-between;
-    font-size: 15px;
+    text-align: center;
+    font-size: 0.8rem;
     margin-top: 70px;
 }
 footer .jv{
     text-decoration: none;
+    width: 100%;
     color: rgba(0, 0, 0, 0.726);
     font-weight: 100;
 }
-.scroll-up{
+/* .scroll-up{
     position: relative;
     width: 35px;
     height: 35px;
@@ -217,7 +216,7 @@ footer .jv{
 .scroll-up img{
     width: 35px;
     opacity: 0.5;
-}
+} */
 
 @media only screen and (min-width:1024px) {
     section a{
@@ -230,7 +229,7 @@ footer .jv{
     section img{
       width: 50%;
     }
-    footer{
+    footer .jv{
       position: relative;
       right: 30px;
       justify-content: flex-end;
