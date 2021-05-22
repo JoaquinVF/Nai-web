@@ -19,7 +19,6 @@ body{
     overflow-x: hidden;
 }
 
-
 a
 {
   text-decoration: none;
@@ -123,6 +122,8 @@ a:hover
   background: black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
   
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
