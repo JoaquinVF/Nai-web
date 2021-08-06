@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;600;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,500&display=swap");
 * {
   -webkit-tap-highlight-color: transparent;
@@ -25,8 +25,59 @@ body {
   --border: #0000001a;
 }
 
+
+/* LOAD */
+.load{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+.load p{
+  font-size: 1.2rem;
+}
+.loading{
+  width: 100px;
+  height: 100px;
+}
+.load, .loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+.circle{
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--text);
+  border-radius: 100%;
+  animation: loading 2s linear infinite;
+}
+@keyframes loading {
+  0%{
+    transform:rotate(0deg)
+              translateY(50px)
+              rotate(0deg);
+  
+  }
+  100%{
+    transform:rotate(360deg)
+              translateY(50px)
+              rotate(-360deg);
+  }
+}
+
+
+
+
+main{
+  display: none;
+  opacity: 0;
+  transition: all 500ms;
+}
 .dark{
-  --bg:#464646;
+  --bg:#000000;
   --menu-bg: #ffffff;
   --icons: rgb(54, 54, 54);
   --text: #ffffff;
@@ -53,14 +104,21 @@ a:hover {
   z-index: 2;
   cursor: pointer;
 }
-.icon{
-  background-image:  url('./imgs/icons8-luna-creciente-48.png');
+.bombilla, .luna{
   background-size: cover;
   width: 20px;
   height: 20px;
   position: absolute;
   left: 13px;
   top: 19px;
+}
+.bombilla{
+  background-image: url('./imgs/icons8_light_48px.png');
+  display: block;
+}
+.luna{
+  background-image: url('./imgs/icons8-luna-creciente-48.png');
+  display: none;
 }
 
 
@@ -132,6 +190,7 @@ a:hover {
 
 #menu {
   display: none;
+  opacity: 0;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -143,10 +202,11 @@ a:hover {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
+
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
 
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: all 300ms ease;
 }
 
 #menu li {
@@ -165,18 +225,8 @@ a:hover {
   opacity: 1;
 }
 
-section a{
-  color: var(--menu-bg);
-}
 
-@media screen and (max-width: 768px) {
-  #menu {
-    transform: none;
-    opacity: 0;
 
-    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-}
 nav {
   border-bottom: 3px solid var(--icons);
   box-shadow: 0px 1px 5px 0px var(--icons);
@@ -205,16 +255,28 @@ nav {
 .gallery img {
   width: 90%;
   height: 50%;
-  margin: 1px 5px;
+  margin: 10px 5px;
+}
+.gallery h3{
+  font-weight: 500;
+  color: var(--text);
+}
+.gallery p{
+  color: var(--text);
+  margin: 0 20px;
+  text-align: left;
+  font-weight: 500;
 }
 section {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
 }
+
 section a {
   margin: 10px;
   text-align: center;
+  color: var(--menu-bg);
 }
 section img {
   position: relative;
@@ -225,14 +287,14 @@ section img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   opacity: 0.7;
 }
-.social-media img {
+.social{
+  background-image: url('./imgs/icons8_instagram_old_100px.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 30px;
   height: 30px;
-  padding: 30px 50px;
-  border: 1px solid var(--border);
 }
 .scroll-up {
   position: relative;
@@ -257,7 +319,8 @@ footer .jv {
   color: var(--menu-bg);
   font-weight: 500;
 }
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 768px) {
   section a {
     width: 100%;
     height: auto;
@@ -268,10 +331,33 @@ footer .jv {
   section img {
     width: 50%;
   }
-  .gallery img {
+  .gallery img, .gallery p {
     width: 70%;
+  }
+  .gallery p{
+    margin: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
   }
   .scroll-up {
     right: 20px;
+  }
+
+
+  section{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+  .nuboyoshi{
+    grid-column: 1/6;
+  }
+  .denbora{
+    grid-column: 7/-1;
+  }
+  .common{
+    grid-row: 2/3;
+    grid-column: 1/-1;
   }
 }
