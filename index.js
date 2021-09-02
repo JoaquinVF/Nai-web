@@ -7,20 +7,33 @@ const luna = document.querySelector('.luna');
 const main = document.querySelector('main');
 const load = document.querySelector('.load');
 const instagram = document.querySelector('.social');
+const naiqui = document.querySelector('#naiqui');
 
 
 function loading(){
-    setTimeout(function(){
-        load.style.opacity = '0';
-        load.style.display = 'none';
-
-        main.style.display = 'block';
-        setTimeout(()=> (main.style.opacity = '1'), 50)
-    }, 2000)
+    if (document.title !== 'Naiquen Villanueva | Fotografía') {
+        setTimeout(function(){
+            load.style.opacity = '0';
+            load.style.display = 'none';
+    
+            main.style.display = 'block';
+            setTimeout(()=> (main.style.opacity = '1'), 50)
+        }, 2000)
+    } else{
+        naiqui.addEventListener("click",(e)=>{
+            load.style.opacity = '0';
+            load.style.display = 'none';
+        
+            main.style.display = 'block';
+            setTimeout(()=> (main.style.opacity = '1'), 50)
+        })
+    }
 }
 loading();
 
-function showContent() {
+
+
+function showMenu() {
     if (check.checked) {
         element.style.display='block';
         setTimeout((e)=>{
@@ -36,7 +49,7 @@ function showContent() {
 }
 
 check.addEventListener('click', (e)=>{
-    showContent();
+    showMenu();
 });
 
 theme.addEventListener('change', function(){

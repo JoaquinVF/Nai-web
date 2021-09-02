@@ -47,6 +47,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1.7px;
+  cursor: pointer;
 }
 .loading{
   width: 100px;
