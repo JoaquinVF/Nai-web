@@ -21,8 +21,15 @@ body {
   --bg: #ffffff;
   --menu-bg: #000000;
   --text: #000000;
-  --icons: #cdcdcd;
+  --icons: #242424;
   --border: #0000001a;
+}
+.dark{
+  --bg:#242424;
+  --menu-bg: #ffffff;
+  --icons: #dbdbdb;
+  --text: #ffffff;
+  --border: rgba(255, 255, 255, 0.10);
 }
 
 
@@ -32,9 +39,14 @@ body {
   height: 100vh;
   text-align: center;
   flex-direction: column;
+  background: url('./imgs/PORTADA\ WEB.jpg') no-repeat;
+  background-size: cover;
 }
 .load p{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.7px;
 }
 .loading{
   width: 100px;
@@ -45,12 +57,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--text);
+  color: rgba(249, 178, 0, 1);
 }
 .circle{
   width: 20px;
   height: 20px;
-  border: 1px solid var(--text);
+  background-color: rgba(249, 178, 0, 1);
   border-radius: 100%;
   animation: loading 2s linear infinite;
 }
@@ -76,13 +88,7 @@ main{
   opacity: 0;
   transition: all 500ms;
 }
-.dark{
-  --bg:#000000;
-  --menu-bg: #ffffff;
-  --icons: rgb(54, 54, 54);
-  --text: #ffffff;
-  --border: rgba(255, 255, 255, 0.10);
-}
+
 
 
 
@@ -125,8 +131,8 @@ a:hover {
 #menuToggle {
   display: block;
   position: absolute;
-  top: 15px;
-  right: 5px;
+  top: 20px;
+  right: 15px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -195,12 +201,11 @@ a:hover {
   width: 100vw;
   height: 100vh;
   padding-top: 100px;
-  top: -30px;
-  right: -9px;
+  top: -37px;
+  right: -15px;
   font-family: "Montserrat", sans-serif;
   background: var(--menu-bg);
   list-style-type: none;
-  -webkit-font-smoothing: antialiased;
 
 
   transform-origin: 0% 0%;
@@ -228,8 +233,6 @@ a:hover {
 
 
 nav {
-  border-bottom: 3px solid var(--icons);
-  box-shadow: 0px 1px 5px 0px var(--icons);
   width: 100%;
   height: 50px;
   display: flex;
