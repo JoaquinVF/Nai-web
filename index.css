@@ -278,7 +278,7 @@ section {
 }
 
 section a {
-  margin: 10px;
+  margin: 10px 40px;
   text-align: center;
   color: var(--menu-bg);
 }
@@ -326,17 +326,17 @@ footer .jv {
 
 @media only screen and (min-width: 768px) {
   section a {
-    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     place-items: center;
+    margin: 0;
   }
   section img {
     width: 50%;
   }
   .gallery img, .gallery p {
-    width: 70%;
+    width: 40%;
   }
   .gallery p{
     margin: 10px;
@@ -347,14 +347,20 @@ footer .jv {
   .scroll-up {
     right: 20px;
   }
-
-
   section{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
-  .nuboyoshi{
+  .social-media{
+    margin-top: 10%;
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+  }
+  /* .nuboyoshi{
     grid-column: 1/6;
   }
   .denbora{
@@ -363,5 +369,5 @@ footer .jv {
   .common{
     grid-row: 2/3;
     grid-column: 1/-1;
-  }
+  } */
 }
